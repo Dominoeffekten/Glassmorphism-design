@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title>Document</title>
+	<style>
+		body {
+			background: url(https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80) no-repeat;
+    		background-size: auto;
+			display: flex;
+			gap: 20px;
+			justify-content: center;
+		}
+
+		/* the box */
+		.phone {
+			height: auto;
+			width: 25em;
+			border: 1px solid #fff;
+			box-shadow: 1px 1px 4px #fff;
+			background-color: rgba(255,255,255, 0.4);
+			display: flex;
+			flex-direction: column;
+			color: #fff;
+			justify-content: space-between;
+		}
+		/****************
+			header
+		*****************/
+		/* headings */
+		h1 {
+			font-family: 'Font Awesome 5 Free', Arial, sans-serif;
+			letter-spacing: 5px;
+			text-align: center;
+		}
+
+
+		/****************
+			wrapper
+		*****************/
+		/* wrapper */
+		.main-wrapper{
+			display: flex;
+    		flex-direction: column;
+			padding: 8%;
+		}
+		/* paragraph */
+		p {
+			font-size: 1em;
+			font-family: Arial, sans-serif;
+			margin:0;
+		}
+		/* heading */
+		h2 {
+			font-family: Arial, sans-serif;
+		    font-size: 1em;
+			margin: 1% 0;
+		}
+		/* button */
+		button {
+			border:none;
+			padding: 2% 5%;
+			color: #fff;
+			width: 50%;
+			margin: 0 auto;
+			font-size: 1em;
+		}
+		/****************
+			wrapper - home
+		*****************/
+		.home-column img {
+			width: 100%;
+		}
+
+		/****************
+			wrapper - inbox
+		*****************/
+		.inbox-user {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			padding: 3% 0;
+			border-bottom: 1px solid;
+		}
+		.inbox-column i {
+			font-size: 3em;
+			width: 20%;
+		}
+		.inbox-column article {
+			width: 80%;
+		}
+		.inbox-column h2 {
+		    font-size: 1em;
+		}
+		.inbox-column p {
+			margin: 0;
+		}
+		/****************
+			wrapper - profile
+		*****************/
+		/* profile picture */
+		.profile-column i {
+			font-size: 10em;
+			width: 40%;
+			margin: 0 auto;
+		}
+		/* button*/
+		.profile-column button {
+			background: rgb(226,163,130);
+			background: linear-gradient(90deg, rgba(226,163,130,1) 0%, rgba(240,43,2,1) 100%);
+		}
+
+		/****************
+			footer
+		*****************/
+		nav ul {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+    		background-color: rgba(255,255,255, 0.3);
+			margin: 0;
+			padding: 0;
+		}
+		nav ul li {
+			list-style: none;
+			padding: 22px;
+	  	}
+		nav i {
+			color: #fff;
+			font-size: 1.5em;
+		}
+		nav i.active {
+			color: #c75840;
+		}
+
+		
+		  
+		 
+		  
+	</style>
+</head>
+<body>
+
+		<!--home-->
+	<section class="phone">
+		<header>
+			<h1>Home</h1>
+		</header>
+		<div class="main-wrapper home-column">
+			<article>
+				<img src="https://images.unsplash.com/photo-1494774157365-9e04c6720e47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" alt="">
+				<h2>New man</h2>
+				<p>In love</p>
+			</article>	
+		</div>
+		  
+		
+		<footer>
+			<nav>
+				<ul>
+					<li>
+						<a href="#">
+							<i class="fa-solid fa-house active"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa-solid fa-magnifying-glass"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa-solid fa-envelope"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa-solid fa-user"></i>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</footer>
+	</section>
+	<!-- inbox -->
+	<section class="phone">
+		<header>
+			<h1>Inbox</h1>
+		</header>
+		<div class="main-wrapper inbox-column">
+			<div class="inbox-user">
+				<i class="fa-solid fa-user"></i>
+				<article>
+					<h2>New man</h2>
+					<p>Lorem ipsum...</p>
+				</article>
+			</div>
+			<div class="inbox-user">
+				<i class="fa-solid fa-user"></i>
+				<article>
+					<h2>John Doe</h2>
+					<p>Lorem ipsum...</p>
+				</article>
+			</div>
+			<div class="inbox-user">
+				<i class="fa-solid fa-user"></i>
+				<article>
+					<h2>Big sis</h2>
+					<p>Lorem ipsum...</p>
+				</article>
+			</div>
+			<div class="inbox-user">
+				<i class="fa-solid fa-user"></i>
+				<article>
+					<h2>Little sis</h2>
+					<p>Lorem ipsum...</p>
+				</article>
+			</div>
+			
+		</div>
+		  
+		
+		<footer>
+			<nav>
+				<ul>
+					<li>
+						<a href="#">
+							<i class="fa-solid fa-house"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa-solid fa-magnifying-glass"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa-solid fa-envelope active"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa-solid fa-user"></i>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</footer>
+	</section>
+	<!-- user --> 
+	<section class="phone">
+		<header>
+			<h1>Jane Doe</h1>
+		</header>
+		<div class="main-wrapper profile-column">
+			<i class="fa-solid fa-circle-user"></i>
+			<p>
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, 
+				molestias accusamus quod distinctio voluptates suscipit officia assumenda, 
+				nobis incidunt minus unde omnis dolorem eius excepturi ratione ex sit. 
+				Labore, nam.
+			</p>
+			<button>Edit profile</button>
+		</div>  
+		<footer>
+			<nav>
+				<ul>
+					<li>
+						<a href="#">
+							<i class="fa-solid fa-house"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa-solid fa-magnifying-glass"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa-solid fa-envelope"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa-solid fa-user active"></i>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</footer>
+	</div>
+</body>
+</html>
